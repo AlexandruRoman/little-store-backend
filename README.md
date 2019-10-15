@@ -49,8 +49,6 @@
 
 ## About The Project
 
-[![Snippet Store Showcase][product-screenshot]](https://github.com/AlexandruRoman/little-store-backend)
-
 Today, the vast majority of e-commerce frameworks are using PHP as their main programming language. And that's a little bit ironical when you think that the language of the web is not the language of e-commerce.
 
 That's how this project began: as a React alternative to the PHP world of e-commerce.
