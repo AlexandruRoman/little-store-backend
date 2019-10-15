@@ -1,0 +1,110 @@
+{
+  "name": "api-skelpi",
+  "version": "0.1.0",
+  "description": "skeleton API in Typescript",
+  "main": "./dist/server.js",
+  "scripts": {
+    "build": "webpack --config webpack.config.js",
+    "clear-build": "rm -r ./dist",
+    "postinstall": "npm run build",
+    "test": "jest --forceExit",
+    "test-ci": "npm test && cat ./coverage/lcov.info | coveralls",
+    "start": "npm run build && node ./dist/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anthillsolutions/api-skel.git"
+  },
+  "author": "Pierre Repetto-Andipatin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/anthillsolutions/api-skel/issues"
+  },
+  "homepage": "https://github.com/anthillsolutions/api-skel#readme",
+  "jest": {
+    "globals": {
+      "ts-jest": {
+        "tsConfigFile": "tsconfig.json"
+      }
+    },
+    "moduleFileExtensions": [
+      "ts",
+      "js",
+      "json"
+    ],
+    "moduleDirectories": [
+      "node_modules",
+      "server"
+    ],
+    "transform": {
+      "^.+\\.(ts|tsx)$": "./node_modules/ts-jest/preprocessor.js"
+    },
+    "testMatch": [
+      "**/tests/**/*.test.(ts|js)"
+    ],
+    "testEnvironment": "node",
+    "mapCoverage": true,
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "**/*.{ts,jsx}",
+      "!**/node_modules/**",
+      "!**/vendor/**",
+      "!**/coverage/**",
+      "!**/webpack.config.js"
+    ]
+  },
+  "engines": {
+    "node": "9.2.0"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^3.0.0",
+    "@types/chai": "^4.0.1",
+    "@types/csvtojson": "^1.1.5",
+    "@types/dotenv": "^4.0.0",
+    "@types/express": "^4.0.36",
+    "@types/express-fileupload": "^0.4.0",
+    "@types/jest": "^20.0.4",
+    "@types/joi": "^14.3.2",
+    "@types/json2csv": "^4.2.0",
+    "@types/jsonwebtoken": "^8.3.1",
+    "@types/moment": "^2.13.0",
+    "@types/mongodb": "^3.1.23",
+    "@types/mongoose": "^5.3.26",
+    "@types/multer": "^1.3.7",
+    "@types/node": "^8.0.13",
+    "@types/socket.io": "^2.1.2",
+    "@types/supertest": "^2.0.2",
+    "chai": "^4.1.0",
+    "coveralls": "^3.0.0",
+    "jest": "^21.2.1",
+    "mocha": "^4.0.1",
+    "nodemon": "^1.18.10",
+    "supertest": "^3.0.0",
+    "ts-jest": "^21.2.4",
+    "ts-loader": "^4.0.0",
+    "ts-node": "^3.2.0",
+    "tslint": "^5.8.0",
+    "typescript": "^2.6.2",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.2.3"
+  },
+  "dependencies": {
+    "bcrypt": "^3.0.4",
+    "body-parser": "^1.17.2",
+    "csvtojson": "^2.0.8",
+    "dotenv": "^4.0.0",
+    "express": "^4.16.2",
+    "express-fileupload": "^1.1.4",
+    "joi": "^14.3.1",
+    "joi-objectid": "^2.0.0",
+    "json2csv": "^4.4.1",
+    "jsonwebtoken": "^8.5.0",
+    "moment": "^2.24.0",
+    "mongodb": "^3.1.10",
+    "mongoose": "^5.5.1",
+    "mongoose-update-if-current": "^1.0.3",
+    "multer": "^1.4.1",
+    "reflect-metadata": "^0.1.12",
+    "socket.io": "^2.2.0"
+  }
+}
