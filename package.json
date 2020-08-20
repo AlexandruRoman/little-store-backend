@@ -89,7 +89,7 @@
     "webpack-cli": "^3.2.3"
   },
   "dependencies": {
-    "bcrypt": "^3.0.4",
+    "bcrypt": "^5.0.0",
     "body-parser": "^1.17.2",
     "csvtojson": "^2.0.8",
     "dotenv": "^4.0.0",
