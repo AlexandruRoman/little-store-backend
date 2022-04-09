@@ -99,7 +99,7 @@
     "joi-objectid": "^2.0.0",
     "json2csv": "^4.4.1",
     "jsonwebtoken": "^8.5.0",
-    "moment": "^2.24.0",
+    "moment": "^2.29.2",
     "mongodb": "^3.1.10",
     "mongoose": "^5.5.1",
     "mongoose-update-if-current": "^1.0.3",
