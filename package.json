@@ -90,10 +90,10 @@
   },
   "dependencies": {
     "bcrypt": "^3.0.4",
-    "body-parser": "^1.17.2",
+    "body-parser": "^1.20.1",
     "csvtojson": "^2.0.8",
     "dotenv": "^4.0.0",
-    "express": "^4.16.2",
+    "express": "^4.18.2",
     "express-fileupload": "^1.1.4",
     "joi": "^14.3.1",
     "joi-objectid": "^2.0.0",
